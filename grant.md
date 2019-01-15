@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: allposts
 title: Grant
 description: A cool guy
 image: assets/images/pic12.jpg

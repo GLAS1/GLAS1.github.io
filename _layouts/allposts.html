@@ -10,29 +10,46 @@
 
   <body>
 
-    {% include header.html %} 
-    
-    
-    <!-- Main -->
-    <div id="main" class="alt">
+    {% include header.html %}
+
+    <section id="banner" class="style2">
+        <div class="inner">
+            <span class="image">
+                <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+            </span>
+            <header class="major">
+
+                <h1>{{ page.title }}</h1>
+
+            </header>
+            <div class="content">
+
+                {{ page.description }}
+
+            </div>
+        </div>
+    </section>
 
       <!-- One -->
       <section id="one">
-	<div class="inner">
-          {% for post in site.posts %}
-	  {% if post.title != 404 %}
-	  <header class="major">
-	    <h1>{{ post.title }}</h1>
-	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.content }}</p>
-	  {% endif %}
-          {% endfor %}
-	</div>
-      </section>
+	        <div class="inner">
+            {% for post in site.posts %}
 
-    </div>
+            {% assign author = page.title %}
+
+            {% if post.tags contains author and page.title != '404' %}
+	          <header class="major">
+	             <h1>{{ post.title }}</h1>
+	          </header>
+	          {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+
+            {% if post.date %}<p>{{ post.date | date: "%b %d, %y" }}</p>{% endif %}
+	          <p>{{ post.content }}</p>
+	          {% endif %}
+
+            {% endfor %}
+	        </div>
+      </section>
 
     {% include footer.html %}
 
