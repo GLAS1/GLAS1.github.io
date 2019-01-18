@@ -1,8 +1,8 @@
 ---
 layout: landing
 title: Landing
-description: example
-image: assets/images/pic11.jpg
+description:
+image:
 nav-menu: false
 show_tile: false
 ---

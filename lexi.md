@@ -2,6 +2,6 @@
 layout: allposts
 title: Lexi
 description: oof
-image: assets/images/pic08.jpg
+image:
 nav-menu: true
 ---

@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Home
-landing-title: 'Our Cool Project Title'
+landing-title: 'Employee Selector & Resume Generator'
 description: null
 image: null
 author: null
 show_tile: false
 ---
 
-Some detail about the site and about the team. Where to find info about the project!
+Our site hosts information about our project including detailed requirements and sprint planning notes.
