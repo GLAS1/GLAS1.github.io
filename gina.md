@@ -1,7 +1,7 @@
 ---
 layout: allposts
 title: Gina
-description: Pretty :)
+description: Fancies math quilting
 image:
 nav-menu: true
 ---

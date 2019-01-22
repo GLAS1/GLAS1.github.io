@@ -1,7 +1,7 @@
 ---
 layout: allposts
 title: Grant
-description: A cool guy
+description: Solar Car Media Team Ruler of Everything
 image:
 nav-menu: true
 ---

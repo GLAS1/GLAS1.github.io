@@ -1,7 +1,7 @@
 ---
 layout: allposts
 title: Lexi
-description: oof
+description: A neat clarinet player
 image:
 nav-menu: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: allposts
 title: Sara
-description: lol
+description: Queen of baked goods
 image:
 nav-menu: true
 ---
