@@ -1,0 +1,16 @@
+---
+layout: post
+title: Moderately Concerned
+tags: [Lexi]
+description:
+image:
+published: true
+---
+
+We have barely started development and have already encountered numerous roadblocks that are causing quite a bit of stress in our group. To begin with, our team spent *many* hours trying to figure out how to actually get a local instance of the application running on our machines. Last semester's 499 team was tasked with building an installer to facilitate the process of using the application, but the installer did not work for us (nor does it work for our SQS contact, Ben).
+
+Once we were able to fix a couple things and view the application, other unpleasant aspects of this project surfaced. For example, I was creating a database schema for our project planning assignment, and I noticed many issues with the database design that, despite being functional, are irritating and unconventional, making the development of the application rather cumbersome. The database would have been implemented by a previous 499 team at least two semesters ago. It appears that multiple people worked on the database and that none of them really had any experience in this field. Almost all of the tables have the same primary key name: UID. In context, it seems that UID stands for "user id", the initial primary key of the table *user*. This really shouldn't be capitalized, but, ok. Anyway, someone else probably created the other tables and thought that UID was supposed to be the primary key for each one, instead of a unique, descriptive name. This issue does not break the database; everything works fine, but it is confusing. One of the tables does not even have a primary key, so I am not happy about that either. Second, none of the existing tables were set up with foreign key references. In other words, when viewing a schema of the existing database, it is not apparent that any relationships exist between any of the tables. Going forward, I want to implement the database in a clear, conventional way. The schema I created leaves the existing tables as they were, but creates the new tables in a descriptive way with appropriate parent-child relationships. I am torn between fixing the whole application and focusing just on the new requirements. The last issue with the application that is currently on my mind is something Grant noticed yesterday. Some tables in the database were created but never used in the application. We were expecting this functionality to already be complete, and now that we see that it is not, we are worried that some of the new stuff we were planning to do will not make sense with the way the application is functioning right now.
+
+Overall, this project is going to be a lot of work. We have prioritized our requirements and discussed them with Ben because it is uncertain whether or not we will be able to complete everything. Alongside 3 other very difficult classes, this semester is proving itself to be the toughest yet in my college career. However, I am working with a very strong team, and I believe that whatever product we deliver at the end of the semester will be a good product that is going in the direction that Ben ultimately wants to take this application.
+
+Word count: 537
